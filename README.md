@@ -1,4 +1,5 @@
-# # Excel Salary Dashboard
+# Excel Salary Dashboard
+
 ![Recording2025-08-02092421-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/bfa33ea0-1d9e-4c49-9247-4cde23205892)
 
 ## Overview
@@ -33,7 +34,7 @@ The dataset provides valuable insights for those navigating the evolving data jo
 
 #### 📊 Data Science Job Salaries – Bar Chart
 
-<img width="825" height="473" alt="Screenshot 2025-08-02 101823" src="https://github.com/user-attachments/assets/54e1663c-361f-4a78-922e-5ea533492ec5" />
+<img width="700" height="800" alt="Screenshot 2025-08-02 101823" src="https://github.com/user-attachments/assets/54e1663c-361f-4a78-922e-5ea533492ec5" />
 
 - 🛠️ **Excel Features:** Implemented bar chart with formatted salary values and a layout optimized for clarity.
 - 🎨 **Design Choice:** Horizontal orientation chosen to facilitate easier comparison across roles.
@@ -54,12 +55,12 @@ The dataset provides valuable insights for those navigating the evolving data jo
 
 #### 💰 Median Salary by Job Title
 
-```
+```excel
 =MEDIAN(
 IF(
 (jobs[job_title_short]=A2)*
 (jobs[salary_year_avg]<>0)*
-(jobs[job_country]=contry)*
+(jobs[job_country]=country)*
 (ISNUMBER(SEARCH(type,jobs[job_schedule_type]))),
 (jobs[salary_year_avg])
 )
@@ -76,15 +77,15 @@ IF(
 
 🍽️ Supporting Data Table
 
-<img width="426" height="382" alt="job_title_short_sorted" src="https://github.com/user-attachments/assets/3bdfaf80-5c29-4783-ae2f-78094a341022" />
+<img width="280" height="200" alt="job_title_short_sorted" src="https://github.com/user-attachments/assets/3bdfaf80-5c29-4783-ae2f-78094a341022" />
 
 📉 Dashboard Integration
 
-<img width="332" height="511" alt="job_title" src="https://github.com/user-attachments/assets/0ac6eed3-6b4b-497f-a61d-043510035908" />
+<img width="350" height="500" alt="job_title" src="https://github.com/user-attachments/assets/0ac6eed3-6b4b-497f-a61d-043510035908" />
 
 #### ⏰ Count of Job Schedule Type
 
-```
+```excel
 =FILTER(K2#,NOT(ISNUMBER(SEARCH("and",K2#)))*(K2#<>0))
 ```
 
@@ -94,11 +95,11 @@ IF(
 
 🍽️ Supporting Data Table  
 
-<img width="332" height="186" alt="job_schedule_type_sorted" src="https://github.com/user-attachments/assets/1a8fc6f2-3053-4155-8e4b-a79cbd2de1f0" />
+<img width="250" height="150" alt="job_schedule_type_sorted" src="https://github.com/user-attachments/assets/1a8fc6f2-3053-4155-8e4b-a79cbd2de1f0" />
 
 📉 Dashboard Integration  
 
-<img width="338" height="405" alt="type_dashboard" src="https://github.com/user-attachments/assets/e5f3ef0b-09b0-472b-bb97-0fcc6339f7ad" />
+<img width="400" height="500" alt="type_dashboard" src="https://github.com/user-attachments/assets/e5f3ef0b-09b0-472b-bb97-0fcc6339f7ad" />
 
 ### ❎ Data Validation
 
