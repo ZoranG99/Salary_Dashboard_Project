@@ -9,7 +9,7 @@ The Excel Salary Dashboard was designed to help job seekers explore compensation
 ### 📊 Dashboard File
 You can view the final dashboard here: [Salary_Dashboard_Project.xlsx](Salary_Dashboard_Project.xlsx)
 
-## Excel Techniques Applied
+### Excel Techniques Applied
 
 The project leverages a range of Excel functionalities to analyze and present the data effectively:
 
@@ -17,7 +17,7 @@ The project leverages a range of Excel functionalities to analyze and present th
 - **🧮 Formulas and Functions** – to compute summaries and derive insights  
 - **❎ Data Validation** – to enable interactivity and maintain consistency
 
-## About the Dataset
+### About the Dataset
 
 The dataset consists of real-world data science job listings from 2023. It includes detailed information such as:
 
